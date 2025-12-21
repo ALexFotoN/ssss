@@ -7,6 +7,7 @@ public class AttackPerformer : MonoBehaviour
     [SerializeField] private CharacterAnimationPlayer _characterAnimationPlayer;
     [SerializeField] private AttackButton[] _buttons;
     [SerializeField] private TMP_Dropdown _completeDropdow;
+    [SerializeField] private Transform _enemyPoint;
     private AnimationStrategy _currentStrategy;
     private AttackButton _selectedButton;
     [SerializeField] private CompleteType _currentCompleteType;
@@ -31,6 +32,11 @@ public class AttackPerformer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             ExecuteAttack();
+
+            if(EnemyService.Instance.CurrentEnemy != null)
+            {
+                EnemyService.Instance.CurrentEnemy.Attack();
+            }
         }
     }
 
@@ -45,6 +51,8 @@ public class AttackPerformer : MonoBehaviour
 
         _selectedButton = button;
         _selectedButton.Select();
+
+        EnemyService.Instance.ShowEnemy(button.LinkedEnemy, _enemyPoint.position);
     }
     private void ChangeCompleteType(int value)
     {

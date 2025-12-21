@@ -278,6 +278,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &280931653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280931655}
+  - component: {fileID: 280931654}
+  m_Layer: 0
+  m_Name: Bootstrapper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &280931654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280931653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4178c14860b6d47b641ec5c414c362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &280931655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280931653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318806556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,7 +1139,7 @@ Transform:
   m_GameObject: {fileID: 917310195}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.98, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1600,6 +1644,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147672664}
   m_CullTransparentMesh: 1
+--- !u!1 &1186511501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186511502}
+  m_Layer: 0
+  m_Name: Enemy Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1186511502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186511501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.56, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1230046843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1710,7 @@ MonoBehaviour:
   - {fileID: 2042625387}
   - {fileID: 1795431390}
   _completeDropdow: {fileID: 1018853805}
+  _enemyPoint: {fileID: 1186511502}
   _currentCompleteType: 0
 --- !u!4 &1230046845
 Transform:
@@ -1789,6 +1865,7 @@ MonoBehaviour:
   _seletedColor: {r: 0.47401816, g: 0.990566, b: 0.2756764, a: 1}
   <Button>k__BackingField: {fileID: 1393845531}
   <Data>k__BackingField: {fileID: 11400000, guid: b51a13b493298904098a47f9031f9adc, type: 2}
+  <LinkedEnemy>k__BackingField: {fileID: 6148838369492881982, guid: f542fa1804d616c448af2763fef90407, type: 3}
 --- !u!1 &1412245910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,6 +2328,7 @@ MonoBehaviour:
   _seletedColor: {r: 0.47401816, g: 0.990566, b: 0.2756764, a: 1}
   <Button>k__BackingField: {fileID: 1795431387}
   <Data>k__BackingField: {fileID: 11400000, guid: e42ba8395307f1d46b02fb9566c1107b, type: 2}
+  <LinkedEnemy>k__BackingField: {fileID: 8178363443593062517, guid: 2b45a0d1ebeb75646b8f9cdf2e0423b3, type: 3}
 --- !u!1 &1934446249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,6 +2601,7 @@ MonoBehaviour:
   _seletedColor: {r: 0.47401816, g: 0.990566, b: 0.2756764, a: 1}
   <Button>k__BackingField: {fileID: 2042625384}
   <Data>k__BackingField: {fileID: 11400000, guid: 8226ee192034b1d4a93ce816874560ca, type: 2}
+  <LinkedEnemy>k__BackingField: {fileID: 6603450405539226309, guid: a774f0a92b211994a9fb442883f4ecf0, type: 3}
 --- !u!1 &2097873176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,3 +2714,5 @@ SceneRoots:
   - {fileID: 2097873180}
   - {fileID: 86604504}
   - {fileID: 1230046845}
+  - {fileID: 1186511502}
+  - {fileID: 280931655}

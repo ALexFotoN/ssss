@@ -11,6 +11,7 @@ public class AttackButton : MonoBehaviour
 
     [field: SerializeField] public Button Button { get; private set; }
     [field: SerializeField] public AttackData Data { get; private set; }
+    [field: SerializeField] public Enemy LinkedEnemy { get; private set; }
 
     private void Reset()
     {
